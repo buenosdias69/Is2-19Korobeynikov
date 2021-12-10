@@ -16,7 +16,21 @@ namespace Задание_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Zad_1());
+        }
+    }
+    internal class Zadda_3
+    {
+        public static string C()
+        {
+            const string host = "caseum.ru";
+            const int port = 33333;
+            const string user = "test_user";
+            const string db = "db_test";
+            const string pass = "test_pass";
+            string connStr = $"server={host};port={port};user={user};" +
+            $"database={db};password={pass};";
+            return connStr;
         }
     }
 }
